@@ -1,0 +1,160 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Bai Jamjuree", sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    url('img/stadium.jpg');;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.head {
+    background-color: black;
+    height: 5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.head img {
+    padding-left: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+.score {
+    padding: 80px 0 40px;
+}
+
+
+.quiz-app {
+	width: 100%;
+	max-width: 800px;
+	background: rgb(40, 70, 17);
+	border-radius: 25px;
+	padding: 20px 30px;
+	margin: 40px auto;
+	border: 2px solid white;
+}
+
+h1 {
+	font-size: 36px;
+	text-align: center;
+    color: white;
+}
+
+.quiz {
+	margin: 20px 0;
+}
+
+h2 {
+	font-size: 20px;
+	margin-bottom: 40px;
+    color: white;
+	text-align: center;
+}
+
+.answers-buttons {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+}
+
+.btn,
+.next-btn,
+.rest-btn {
+	width: 100%;
+	padding: 12px 16px;
+	display: block;
+	font-size: 18px;
+	border: 2px solid white;
+	border-radius: 25px;
+	background: #fff;
+	text-align: center;
+	transition: all 0.4s;
+	cursor: pointer;
+	color: black;
+}
+
+.next-btn {
+	text-align: center;
+	margin-top: 25px;
+	background: yellow;
+	color: black;
+	/*	display: none;*/
+}
+
+.rest-btn {
+	text-align: center;
+	margin-top: 25px;
+	background: red;
+	color: white;
+}
+
+.btn:hover:not([disabled]) {
+	color: white;
+	background-color: black;
+}
+
+.btn:disabled {
+	cursor: no-drop;
+}
+
+.correct {
+	background: #1ED715;
+    color: black;
+}
+.incorrect {
+	background: #FF000F;
+	color: #00000099;
+   
+}
+
+.ball {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 800px)  {
+	.quiz-app {
+		max-width: 300px;
+		margin: 0 auto;
+		padding: 10px 15px;
+	}
+	
+	.quiz {
+		margin: 5px 0;
+	}
+
+	.score {
+		padding: 10px 0 10px;
+	}
+
+	.answers-buttons {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 10px;
+	}
+
+	h3 {
+		font-size: 1.5rem;
+	}
+
+	h2 {
+		margin-bottom: 20px;
+	}	
+}
