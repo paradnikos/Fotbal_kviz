@@ -9,14 +9,7 @@ Sledování skóre: Hra sleduje skóre uživatele a aktualizuje na obrazovce tab
 Zobrazení konečného skóre: Po zodpovězení všech otázek hra zobrazí konečné skóre uživatele a zprávu, zda vyhrál nebo prohrál.
 Jak spustit
 Naklonujte si repozitář:
-bash
-Zkopírovat kód
 git clone https://github.com/paradnikos/Fotbal_kviz.git
-Přejděte do složky projektu:
-bash
-Zkopírovat kód
-cd quiz-game
-Otevřete index.html v prohlížeči: Jednoduše otevřete soubor index.html ve svém oblíbeném webovém prohlížeči a začněte hrát.
 Struktura projektu
 index.html: Obsahuje strukturu webové stránky.
 style.css: Obsahuje styly pro kvízovou hru.
@@ -28,7 +21,6 @@ Výběr odpovědi: Když uživatel klikne na odpověď, metoda selectAnswer() zk
 Zobrazení skóre: Metoda showScore() zobrazí konečné skóre a zprávu o výhře/prohře na základě výkonu uživatele.
 Jak upravit
 Přidání/upravení otázek:
-
 Otázky lze upravit nebo přidat v poli questions v souboru script.js.
 Každý objekt otázky by měl obsahovat řetězec question a pole answers, kde každá odpověď má vlastnosti text a correct.
 Změna počtu otázek:
