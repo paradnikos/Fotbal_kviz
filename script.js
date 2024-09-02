@@ -188,11 +188,11 @@ class Quiz {
 
         if (isCorrect) {
             selectBtn.classList.add("correct");
-            this.updateScoreIcon(true); // Update score icon to green
+            this.updateScoreIcon(true); 
             this.score++;
         } else {
             selectBtn.classList.add("incorrect");
-            this.updateScoreIcon(false); // Update score icon to red
+            this.updateScoreIcon(false); 
         }
 
         Array.from(this.answerButtons.children).forEach((button) => {
@@ -216,7 +216,7 @@ class Quiz {
 
     resetScoreIcons() {
         this.scoreIcons.forEach(icon => {
-            icon.src = "img/icons8-football-64.png"; // Reset all icons to white footballs
+            icon.src = "img/icons8-football-64.png"; 
         });
     }
 
@@ -227,7 +227,7 @@ class Quiz {
         : "Ajajaj <br> Prohra";
         this.resultElement.innerHTML = `${resultMessage} <br> ${this.score} : ${this.questions.length - this.score}`;
         this.questionElement.style.display = "none"
-        this.resultElement.style.display = "block";  // Zajistí, že se skóre zobrazí
+        this.resultElement.style.display = "block";  
         this.restButton.innerHTML = "Hrát znova";
         this.restButton.style.display = "block";
         this.restButton.addEventListener("click", () => this.startQuiz());
